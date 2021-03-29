@@ -4,14 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Угадай число</title>
+    <title>Расулов</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #task1{
+            display: none;
+        }
+        #task2{
+            display: none;
+        }
+        #task3{
+            display: none;
+        }
+    </style>
 </head>
-<body style="text-align: center;">
+<body>
     
-    <h1>Угадай число</h1>
-    <input type="text" id="answ">
-    <button id="btn">Угадать</button>
-    <p id="result">Здесь будет результат: у Вас 10 попыток</p>
+    <div id="task1">
+        <h1>Угадай число</h1>
+        <input type="text" id="answ">
+        <button id="btn">Угадать</button>
+        <p id="result">Здесь будет результат: у Вас 10 попыток</p>
+    </div>
+    
+    <div id="task2">
+        <h1> Введите число от 1-7:</h1>
+        <input type="text" id="day">
+        <button id="btn2">Отправить</button>
+    </div>
+    <div id="task3">
+        <h1> Введите 3 числа:</h1>
+        <input type="text" id="num1" placeholder="Первое число">
+        <input type="text" id="num2" placeholder="Второе число">
+        <input type="text" id="num3" placeholder="Третье число">
+        <button id="btn3">Отправить</button>
+    </div>
     
     <script src="script.js"></script>
 </body>
