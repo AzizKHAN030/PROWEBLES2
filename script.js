@@ -15,7 +15,7 @@ if (task == 1) {
 }
 //Задание 1
 function task1() {
-    document.getElementById(`task1`).style.display = "block";
+    document.getElementById(`task1`).style.display = `block`;
     let answ = document.getElementById(`answ`);
     let btn = document.getElementById(`btn`);
     let result = document.getElementById(`result`);
@@ -56,9 +56,10 @@ function task1() {
                 if (confirm(`Вы не угадали! \n Хотите попробовать еще раз?`)) {
                     count = 10;
                     result.innerHTML = `У вас еще ${count} попыток!`;
-                    // btn.disabled = false;
-                } else(alert(`Может быть в другой раз?`));
+                } else{
+                    alert(`Может быть в другой раз?`);
                     btn.disabled = true;
+                }
             }
         } else {
             result.innerHTML = `Введите число!`;
@@ -67,7 +68,7 @@ function task1() {
 }
 //Задание 2
 function task2() {
-    document.getElementById(`task2`).style.display = "block";
+    document.getElementById(`task2`).style.display = `block`;
     let day = document.getElementById(`day`);
     let btn = document.getElementById(`btn2`);
     btn.onclick = function () {
@@ -111,7 +112,7 @@ function task2() {
 }
 //Задание 3
 function task3() {
-    document.getElementById(`task3`).style.display = "block";
+    document.getElementById(`task3`).style.display = `block`;
     let num1 = document.getElementById(`num1`);
     let num2 = document.getElementById(`num2`);
     let num3 = document.getElementById(`num3`);
